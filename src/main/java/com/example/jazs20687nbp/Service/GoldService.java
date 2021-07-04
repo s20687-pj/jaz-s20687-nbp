@@ -1,5 +1,6 @@
 package com.example.jazs20687nbp.Service;
 
+import com.example.jazs20687nbp.Model.Rates;
 import com.example.jazs20687nbp.Model.Root;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
@@ -18,5 +19,18 @@ public class GoldService {
     public List<Root> getGoldPrices() {
         List<Root> rates = restTemplate.getForObject("http://api.nbp.pl/api/cenyzlota/2013-01-01/2013-01-31/", List.class);
         return rates;
+    }
+
+    public double getAverage() {
+//        Rates rates = restTemplate.getForObject("http://api.nbp.pl/api/cenyzlota/2013-01-01/2013-01-31/", Rates.class);
+//        List<Root> rate = rates.getRates();
+        double srednia =0.0;
+//        double whole =0;
+//        for(Root rat :rate){
+//            whole += rat.getCena();
+//        }
+//        double srednia = whole/rate.size();
+        return srednia;
+
     }
 }

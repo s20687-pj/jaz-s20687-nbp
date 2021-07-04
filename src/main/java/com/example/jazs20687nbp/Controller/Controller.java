@@ -22,5 +22,10 @@ public class Controller {
         return ResponseEntity.ok(goldService.getGoldPrices());
     }
 
+    @GetMapping("/nbp2")
+    public ResponseEntity <Double> api2 (){
+        return ResponseEntity.ok(goldService.getAverage());
+    }
+
 
 }
