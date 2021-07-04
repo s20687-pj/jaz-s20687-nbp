@@ -1,0 +1,8 @@
+CREATE TABLE `nbp` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `material` VARCHAR(45) NULL,
+  `datastart` DATE NULL,
+  `datakoniec` DATE NULL,
+  `kurs` DOUBLE NULL,
+  `zapytanie` DATETIME NULL,
+  PRIMARY KEY (`id`));
